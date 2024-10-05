@@ -1,0 +1,102 @@
+body {
+  background-color: lightgray;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5eac9;
+  height: 60vh;
+  width: 60vh;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+
+#addButton {
+  border-radius: 10px;
+  background-color: #f5e893;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+  background-color: #f5c193;
+  border-radius: 10px;
+}
+
+#addButton:active {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+#novaTarefa {
+  margin-top: 40vh;
+  border-radius: 10px;
+  background-color: #f5e893;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2vh;
+}
+
+#novaTarefa:focus {
+  background-color: #f5c193;
+  box-shadow: 0 0 10px #e67e73;
+}
+
+#novaTarefa::placeholder {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+#novaTarefa:focus::placeholder {
+  color: black;
+}
+
+ul {
+  position: absolute;
+  margin-top: 9vh;
+  margin-right: 1vw;
+}
+
+li {
+  list-style: none;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.removeButton {
+  background-color: #f5eac9;
+  border: none;
+  font-size: 16px;
+  margin-left: 0.5vw;
+}
+
+.removeButton:active {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #f5c193;
+  border-radius: 10px;
+}
+
+.task-list li input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
